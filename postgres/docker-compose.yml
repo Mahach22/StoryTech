@@ -16,7 +16,7 @@ services:
       timeout: 15s
       retries: 7
     networks:
-       - postgres_network
+       - jupyter_network
 networks:
-    postgres_network:
-      name: network_postgres
+    jupyter_network:
+      name: jupyter_network
