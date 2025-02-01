@@ -14,8 +14,23 @@ c.NativeAuthenticator.seconds_before_next_try = 1200  # Заблокироват
 # Список разрешенных пользователей (3 учетные записи)
 c.Authenticator.allowed_users = {'user1', 'user2', 'user3'}
 
-# Пароли для пользователей (установите их через командную строку или интерфейс JupyterHub)
-# Примечание: Пароли можно задать через веб-интерфейс при первом входе.
+# Пароли для пользователей 
+# Хешированные пароли для пользователей
+c.Authenticator.users = [
+    {
+        "name": "user1",
+        "password": "$2b$12$OWW.h8ZYFKMAUXyv/Ch7HOtxtcFPFyqjT3EzWNJqF0hY6ZmHAZmnS"  
+    },
+    {
+        "name": "user2",
+        "password": "$2b$12$0WqTiw23qg2vXbZZNttVEuiCLdpMoOnwde15fl50ylDy3ycwHMKHy"  
+    },
+    {
+        "name": "user3",
+        "password": "$2b$12$VSS0pF0LTlbDwn6cua8kUuR2SBslhpwt/.z1gnZIEtLKv52NB7ty6"  
+    }
+]
+
 
 # Администраторы системы
 c.Authenticator.admin_users = {'user1'}  # Например, user1 будет иметь права администратора
