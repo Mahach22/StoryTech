@@ -1,5 +1,5 @@
 from dockerspawner import DockerSpawner
-import os
+import os, nativeauthenticator
 
 c = get_config()
 
