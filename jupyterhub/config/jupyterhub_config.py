@@ -6,23 +6,12 @@ c = get_config()
 # Используем NativeAuthenticator для аутентификации пользователей
 c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
 c.JupyterHub.template_paths = [f"{os.path.dirname(nativeauthenticator.__file__)}/templates/"]
-# Настройка безопасности аутентификации
-c.NativeAuthenticator.open_signup = True
+c.NativeAuthenticator.open_signup = True  # включение регистрации
 c.NativeAuthenticator.check_common_password = True  # Проверка на использование распространенных паролей
-c.NativeAuthenticator.allowed_failed_logins = 3     # Максимум 3 неудачных попытки входа
+c.NativeAuthenticator.allowed_failed_logins = 5     # Максимум 5 неудачных попыток входа
 c.NativeAuthenticator.seconds_before_next_try = 1200  # Заблокировать пользователя на 20 минут после 3 неудачных попыток
 c.Authenticator.admin_users = {'mahach'}  # Администраторы системы
 c.Authenticator.allowed_users = {'mahach', 'user2', 'user3'} # Список разрешенных пользователей (3 учетные записи)
-
-# Хешированные пароли для пользователей
-c.NativeAuthenticator.password_hashes = {
-    "mahach": "$2b$12$7GcU8AOxQui9RsHMs66Dy.mxlzICpxdg9Q6IdNDX8diia0T4PkydC",
-    "user2": "$2b$12$V7z4HOIju.OfJzkkylUQ.eTeGKBqN9jxEbpOpa.MfuZRmQa1uF7Yu",
-    "user3": "$2b$12$SDGg7KnDRIUbE469fbB1he.cV2DNTgIrESybwkTHi4YNgBE6QRi.y"
-}
-
-
-
 
 # Использование DockerSpawner для создания контейнеров для каждого пользователя
 c.JupyterHub.spawner_class = DockerSpawner
