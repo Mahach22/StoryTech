@@ -15,11 +15,11 @@ c.Authenticator.admin_users = {'mahach'}  # Администраторы сис�
 c.Authenticator.allowed_users = {'mahach', 'user2', 'user3'} # Список разрешенных пользователей (3 учетные записи)
 
 # Хешированные пароли для пользователей
-#c.NativeAuthenticator.password_hashes = {
-#    "mahach": "$2b$12$7GcU8AOxQui9RsHMs66Dy.mxlzICpxdg9Q6IdNDX8diia0T4PkydC",
-#    "user2": "$2b$12$V7z4HOIju.OfJzkkylUQ.eTeGKBqN9jxEbpOpa.MfuZRmQa1uF7Yu",
-#    "user3": "$2b$12$SDGg7KnDRIUbE469fbB1he.cV2DNTgIrESybwkTHi4YNgBE6QRi.y"
-#}
+c.NativeAuthenticator.password_hashes = {
+    "mahach": "$2b$12$7GcU8AOxQui9RsHMs66Dy.mxlzICpxdg9Q6IdNDX8diia0T4PkydC",
+    "user2": "$2b$12$V7z4HOIju.OfJzkkylUQ.eTeGKBqN9jxEbpOpa.MfuZRmQa1uF7Yu",
+    "user3": "$2b$12$SDGg7KnDRIUbE469fbB1he.cV2DNTgIrESybwkTHi4YNgBE6QRi.y"
+}
 
 
 
