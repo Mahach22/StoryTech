@@ -4,7 +4,7 @@ import os, nativeauthenticator
 c = get_config()
 
 # Используем NativeAuthenticator для аутентификации пользователей
-c.JupyterHub.authenticator_class = 'native'
+c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
 c.JupyterHub.template_paths = [f"{os.path.dirname(nativeauthenticator.__file__)}/templates/"]
 # Настройка безопасности аутентификации
 c.NativeAuthenticator.open_signup = True
