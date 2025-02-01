@@ -14,22 +14,12 @@ c.NativeAuthenticator.seconds_before_next_try = 1200  # Заблокироват
 # Список разрешенных пользователей (3 учетные записи)
 c.Authenticator.allowed_users = {'user1', 'user2', 'user3'}
 
-# Пароли для пользователей 
 # Хешированные пароли для пользователей
-c.Authenticator.users = [
-    {
-        "name": "user1",
-        "password": "$2b$12$pKojYotvw0qiEojt2oN0HuFUhQM8/4lBB9obZzvHIr3K8XtdNQqBq"  
-    },
-    {
-        "name": "user2",
-        "password": "$2b$12$0hW4hiOVpNA5WeYls8/ZUOs9PR/yfH6E/KjebIYxPT8yUCewwxbFi"  
-    },
-    {
-        "name": "user3",
-        "password": "$2b$12$HhA3WTHIgbr9Lv1cW2lDNu40UWQRvLq/stXH1AW2qPMbT0J1wiSDS"  
-    }
-]
+c.NativeAuthenticator.password_hashes = {
+    "user1": "$2b$12$pKojYotvw0qiEojt2oN0HuFUhQM8/4lBB9obZzvHIr3K8XtdNQqBq",
+    "user2": "$2b$12$0hW4hiOVpNA5WeYls8/ZUOs9PR/yfH6E/KjebIYxPT8yUCewwxbFi",
+    "user3": "$2b$12$HhA3WTHIgbr9Lv1cW2lDNu40UWQRvLq/stXH1AW2qPMbT0J1wiSDS"
+}
 
 
 # Администраторы системы
