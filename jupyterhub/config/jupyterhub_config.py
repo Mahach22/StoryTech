@@ -4,8 +4,8 @@ import os
 c = get_config()
 
 # Используем NativeAuthenticator для аутентификации пользователей
-c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
-
+c.JupyterHub.authenticator_class = 'native'
+c.JupyterHub.template_paths = [f"{os.path.dirname(nativeauthenticator.__file__)}/templates/"]
 # Настройка безопасности аутентификации
 c.NativeAuthenticator.open_signup = True
 c.NativeAuthenticator.check_common_password = True  # Проверка на использование распространенных паролей
