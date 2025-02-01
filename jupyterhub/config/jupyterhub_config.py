@@ -19,15 +19,15 @@ c.Authenticator.allowed_users = {'user1', 'user2', 'user3'}
 c.Authenticator.users = [
     {
         "name": "user1",
-        "password": "$2b$12$OWW.h8ZYFKMAUXyv/Ch7HOtxtcFPFyqjT3EzWNJqF0hY6ZmHAZmnS"  
+        "password": "$2b$12$pKojYotvw0qiEojt2oN0HuFUhQM8/4lBB9obZzvHIr3K8XtdNQqBq"  
     },
     {
         "name": "user2",
-        "password": "$2b$12$0WqTiw23qg2vXbZZNttVEuiCLdpMoOnwde15fl50ylDy3ycwHMKHy"  
+        "password": "$2b$12$0hW4hiOVpNA5WeYls8/ZUOs9PR/yfH6E/KjebIYxPT8yUCewwxbFi"  
     },
     {
         "name": "user3",
-        "password": "$2b$12$VSS0pF0LTlbDwn6cua8kUuR2SBslhpwt/.z1gnZIEtLKv52NB7ty6"  
+        "password": "$2b$12$HhA3WTHIgbr9Lv1cW2lDNu40UWQRvLq/stXH1AW2qPMbT0J1wiSDS"  
     }
 ]
 
