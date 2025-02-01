@@ -1,24 +1,22 @@
 version: '3.8'
 
 networks:
-  fintech_network:
+  jupyter_network:
     external: true
 
 services:
   jupyterhub:
     build: .
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py
-      - jupyterhub_data:/srv/jupyterhub/data
+      - /var/run/docker.sock:/var/run/docker.sock  # Для управления Docker-контейнерами
+      - ./config/jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py  # Конфигурационный файл
+      - jupyterhub_data:/srv/jupyterhub/data  # Общий том для данных
     ports:
-      - "18220:8000"
+      - "18220:8000"  # Порт для доступа к JupyterHub
     networks:
-      - fintech_network
-    runtime: nvidia
-    restart: always
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
+      - jupyter_network
+    restart: always  # Автоматический перезапуск при падении
+
 
 volumes:
-  jupyterhub_data:
+  jupyterhub_data:  # Том для хранения данных
