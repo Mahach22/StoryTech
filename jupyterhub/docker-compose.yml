@@ -1,8 +1,8 @@
 version: '3.8'
 
 networks:
-  jupyter_network:
-    external: true
+    jupyter_network:
+      name: jupyter_network
 
 services:
   jupyterhub:
