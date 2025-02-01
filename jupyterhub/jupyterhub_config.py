@@ -23,9 +23,8 @@ c.Authenticator.admin_users = {'user1'}  # Например, user1 будет и
 # Использование DockerSpawner для создания контейнеров для каждого пользователя
 c.JupyterHub.spawner_class = DockerSpawner
 
-# Удалены все настройки GPU
 c.DockerSpawner.image = "jupyter/base-notebook:latest"  # Базовый образ без GPU
-c.DockerSpawner.network_name = 'fintech_network'
+c.DockerSpawner.network_name = 'jupyter_network'
 c.DockerSpawner.remove = True  # Удалять контейнеры после выхода пользователя
 c.Spawner.http_timeout = 180   # Таймаут для HTTP-запросов
 
