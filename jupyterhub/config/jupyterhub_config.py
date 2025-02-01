@@ -7,8 +7,7 @@ c = get_config()
 c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
 
 # Настройка безопасности аутентификации
-c.JupyterHub.template_paths = [f"{os.path.dirname(nativeauthenticator.__file__)}/templates/"] #new
-c.NativeAuthenticator.open_signup = True #new
+c.NativeAuthenticator.open_signup = True
 c.NativeAuthenticator.check_common_password = True  # Проверка на использование распространенных паролей
 c.NativeAuthenticator.allowed_failed_logins = 3     # Максимум 3 неудачных попытки входа
 c.NativeAuthenticator.seconds_before_next_try = 1200  # Заблокировать пользователя на 20 минут после 3 неудачных попыток
