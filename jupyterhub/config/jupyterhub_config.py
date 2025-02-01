@@ -7,23 +7,23 @@ c = get_config()
 c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
 
 # Настройка безопасности аутентификации
+c.JupyterHub.template_paths = [f"{os.path.dirname(nativeauthenticator.__file__)}/templates/"] #new
+c.NativeAuthenticator.open_signup = True #new
 c.NativeAuthenticator.check_common_password = True  # Проверка на использование распространенных паролей
 c.NativeAuthenticator.allowed_failed_logins = 3     # Максимум 3 неудачных попытки входа
 c.NativeAuthenticator.seconds_before_next_try = 1200  # Заблокировать пользователя на 20 минут после 3 неудачных попыток
-
-# Список разрешенных пользователей (3 учетные записи)
-c.Authenticator.allowed_users = {'mahach', 'user2', 'user3'}
+c.Authenticator.admin_users = {'mahach'}  # Администраторы системы
+c.Authenticator.allowed_users = {'mahach', 'user2', 'user3'} # Список разрешенных пользователей (3 учетные записи)
 
 # Хешированные пароли для пользователей
-c.NativeAuthenticator.password_hashes = {
-    "mahach": "$2b$12$pKojYotvw0qiEojt2oN0HuFUhQM8/4lBB9obZzvHIr3K8XtdNQqBq",
-    "user2": "$2b$12$0hW4hiOVpNA5WeYls8/ZUOs9PR/yfH6E/KjebIYxPT8yUCewwxbFi",
-    "user3": "$2b$12$HhA3WTHIgbr9Lv1cW2lDNu40UWQRvLq/stXH1AW2qPMbT0J1wiSDS"
-}
+#c.NativeAuthenticator.password_hashes = {
+#    "mahach": "$2b$12$pKojYotvw0qiEojt2oN0HuFUhQM8/4lBB9obZzvHIr3K8XtdNQqBq",
+#    "user2": "$2b$12$0hW4hiOVpNA5WeYls8/ZUOs9PR/yfH6E/KjebIYxPT8yUCewwxbFi",
+#    "user3": "$2b$12$HhA3WTHIgbr9Lv1cW2lDNu40UWQRvLq/stXH1AW2qPMbT0J1wiSDS"
+#}
 
 
-# Администраторы системы
-c.Authenticator.admin_users = {'mahach'}  # Например, user1 будет иметь права администратора
+
 
 # Использование DockerSpawner для создания контейнеров для каждого пользователя
 c.JupyterHub.spawner_class = DockerSpawner
