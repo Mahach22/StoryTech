@@ -10,6 +10,9 @@
 2. С использованием [docker compose](jupyterhub/docker-compose.yml) идёт сборка jupyterhub из [dockerfile](jupyterhub/dockerfile) и [конфига jupyterhub](jupyterhub/config/jupyterhub_config.py)
 
 
+Postgres
+
+Postgres устанавливаем командой `docker compose up -d `
 [Название файла](путь/к/файлу)
 
 
