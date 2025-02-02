@@ -13,7 +13,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Команда для запуска контейнеров с пересборкой
-docker-compose up -d --build
+docker compose up -d --build
 
 # Проверка статуса предыдущей команды
 if [ $? -ne 0 ]; then
