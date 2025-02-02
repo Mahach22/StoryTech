@@ -12,6 +12,10 @@
 
 Postgres
 
-Postgres устанавливаем командой `docker compose up -d` в директории нашего [docker compose](postgres/docker-compose.yml). Также для удобства тестрирования сразу создается таблица [initsql файлом](postgres/initdb.sql)
-Для удобства также 
+Postgres устанавливаем командой `docker compose up -d` в директории нашего [docker compose](postgres/docker-compose.yml). Также для удобства тестрирования сразу создается таблица [файлом init.sql](postgres/init.sql)
 
+
+После развертывания всех контейнеров и запуска jupyter notebook, мы можем проверить подключение к postgres. Так как 
+
+
+![sql](img/jupyter-notebook.png)
