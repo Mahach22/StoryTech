@@ -12,8 +12,6 @@
 
 Postgres
 
-Postgres устанавливаем командой ```docker compose up -d```
-[Название файла](путь/к/файлу)
+Postgres устанавливаем командой `docker compose up -d` в директории нашего [docker compose](postgres/docker-compose.yml). Также для удобства тестрирования сразу создается таблица [initsql файлом](postgres/initdb.sql)
+Для удобства также 
 
-
-[Название файла](путь/к/файлу)
