@@ -12,7 +12,7 @@
 
 Postgres
 
-Postgres устанавливаем командой ```docker compose up -d ```
+Postgres устанавливаем командой ```docker compose up -d```
 [Название файла](путь/к/файлу)
 
 
