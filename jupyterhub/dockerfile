@@ -9,7 +9,6 @@ RUN apt-get update -y && \
     pip3 install --no-cache-dir \
         jupyterhub \
         dockerspawner \
-        psycopg2-binary \
         jupyterhub-nativeauthenticator && \
     npm install -g configurable-http-proxy
 
