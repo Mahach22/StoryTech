@@ -1,0 +1,9 @@
+# Используем базовый образ Jupyter Notebook
+FROM jupyter/base-notebook:latest
+
+# Устанавливаем зависимости
+RUN pip3 install --no-cache-dir \
+        psycopg2-binary \
+        pandas \
+        numpy \
+        matplotlib \
