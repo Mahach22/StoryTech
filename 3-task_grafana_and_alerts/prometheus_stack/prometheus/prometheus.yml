@@ -1,0 +1,10 @@
+#prometheus.yml
+
+scrape_configs:
+
+  - job_name: node
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['node-exporter:9100']
+
+
