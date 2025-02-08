@@ -17,7 +17,7 @@ c.Authenticator.allowed_users = {'mahach', 'user2', 'user3'} # Список ра
 c.JupyterHub.spawner_class = DockerSpawner
 
 c.DockerSpawner.image = "storytech-jupyter-notebook"  # кастомный образ с нужными библиотеками
-c.DockerSpawner.network_name = 'jupyter_network'
+c.DockerSpawner.network_name = 'storytech_network'
 c.DockerSpawner.remove = True  # Удалять контейнеры после выхода пользователя
 c.Spawner.http_timeout = 180   # Таймаут для HTTP-запросов
 

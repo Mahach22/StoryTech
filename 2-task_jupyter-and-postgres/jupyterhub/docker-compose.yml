@@ -1,8 +1,8 @@
 version: '3.8'
 
 networks:
-    jupyter_network:
-      name: jupyter_network
+    storytech_network:
+      name: storytech_network
 
 services:
   jupyterhub:
@@ -14,7 +14,7 @@ services:
     ports:
       - "18220:8000"  # Порт для доступа к JupyterHub
     networks:
-      - jupyter_network
+      - storytech_network
     restart: always  # Автоматический перезапуск при падении
 
 

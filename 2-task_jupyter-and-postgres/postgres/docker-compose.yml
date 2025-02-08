@@ -16,7 +16,7 @@ services:
       timeout: 15s
       retries: 7
     networks:
-       - jupyter_network
+       - storytech_network
 networks:
-    jupyter_network:
-      name: jupyter_network
+    storytech_network:
+      name: storytech_network
