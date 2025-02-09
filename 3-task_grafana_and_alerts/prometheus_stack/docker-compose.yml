@@ -23,11 +23,13 @@ services:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
       - /:/rootfs:ro
+      - /tmp:/host/tmp:ro
     command:
       - '--path.procfs=/host/proc'
       - '--path.rootfs=/rootfs'
       - '--path.sysfs=/host/sys'
       - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+      - "--collector.textfile.directory=/host/tmp" # Добавил путь, где хранятся данные по volume docker
     ports:
       - 9100:9100
     environment:
