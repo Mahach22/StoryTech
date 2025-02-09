@@ -9,7 +9,7 @@ RUN apt-get update -y && \
     pip3 install --no-cache-dir \
         jupyterhub \
         dockerspawner \
-        jupyterhub-nativeauthenticator && \
+	jupyterhub-nativeauthenticator && \
     npm install -g configurable-http-proxy
 
 # Копирование конфигурационного файла JupyterHub

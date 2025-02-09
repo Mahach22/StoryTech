@@ -44,6 +44,7 @@ c.JupyterHub.shutdown_no_activity_timeout = 600  # Автоматическое 
 c.JupyterHub.shutdown_on_logout = True  # Завершать работу сервера при выходе пользователя
 
 # Prometheus метрики (если нужны)
+
 c.JupyterHub.metrics_enabled = True
 c.JupyterHub.metrics_port = 8000
 c.JupyterHub.authenticate_prometheus = False
