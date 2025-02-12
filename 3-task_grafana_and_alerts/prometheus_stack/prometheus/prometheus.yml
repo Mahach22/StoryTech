@@ -1,16 +1,36 @@
 #prometheus.yml
+global:
+  scrape_interval: 30s
+
+rule_files:
+  - alert.yml
+alerting:
+  alertmanagers:
+  - scheme: http
+    static_configs:
+    - targets:
+      - "alertmanager:9093"
 
 scrape_configs:
-
+#метрики хоста
   - job_name: node
     scrape_interval: 5s
     static_configs:
     - targets: ['node-exporter:9100']
-
+#юпитерхаб
   - job_name: 'jupyterhub'
     metrics_path: '/hub/metrics'
     static_configs:
       - targets: ['jupyterhub:8000']
+
+#экспортер для контейнеров докер
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+
+# откуда это взялось?
+
 
   - job_name: docker
       # metrics_path defaults to '/metrics'
