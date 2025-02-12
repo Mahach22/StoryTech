@@ -8,6 +8,8 @@ route:
   group_interval: 15s
 
 
+
+
 receivers:
   - name: 'Mail Alert'
     email_configs:
