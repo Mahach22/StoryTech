@@ -16,35 +16,49 @@
   реализация через прямое подключение постгреса в графану и запросы в постгрес.
 
 
-## Алерт ssh
-Postgres устанавливаем командой `docker compose up -d` в директории нашего [docker compose](postgres/docker-compose.yml). Также для удобства тестрирования сразу создается таблица [файлом init.sql](postgres/init.sql)
-sudo apt install mailutils postfix
+## Алерт вход по ssh
+Устанавливаем mailutils, который включает в себя postfix
+```
+sudo apt install mailutils
+```
+настраиваем данные сервера и аутентификации в файле postfix/main.cf
+```
 sudo nano /etc/postfix/main.cf
-
-
-
-## Алерт использование процессора контейнерами выше 80%
-После развертывания всех контейнеров и запуска jupyter notebook, мы можем проверить подключение к postgres используя [python скрипт](connect_to_postgres.py). Так как psycopg2 у нас предустановлен, отдельно его устанавливать в юпитер ноутбук не нужно.
-
+```
+```
 relayhost = [smtp.mail.ru]:465
 smtp_tls_wrappermode = yes
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
-smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
-smtp_use_tls = yes
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt  
+smtp_use_tls = yes                 #мыло.ру приходится использовать с тлс
 smtp_tls_security_level = encrypt
-
-
-sasl_passwd
+```
+настраиваем логин и пароль в файле postfix/sasl_passwd
+```
 [smtp.mail.ru]:465 emaillogin:password
-
+```
+устанавливаем доступ к данным логина и пароля только для рута
+```
 sudo chmod 600 /etc/postfix/sasl_passwd
-
+```
+перезапускаем postfix
+```
 sudo systemctl restart postfix
-
-sudo nano /etc/pam.d/sshd
+```
+Настраиваем запуск [нашего скрипта](./ssh_alert.sh) при входе по ssh
+```
+sudo nano /etc/pam.d/sshd 
+```
+```
 session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh $PAM_USER $PAM_HOST
-sudo systemctl restart
+```
+
+
+## Алерт использование процессора контейнерами выше 80%
+После развертывания всех контейнеров и запуска jupyter notebook, мы можем проверить подключение к postgres используя [python скрипт](connect_to_postgres.py). Так как psycopg2 у нас предустановлен, отдельно его устанавливать в юпитер ноутбук не нужно.
+
+
 
 ![sql](img/jupyter-notebook.png)
