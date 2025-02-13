@@ -54,11 +54,11 @@ sudo nano /etc/pam.d/sshd
 ```
 session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh $PAM_USER $PAM_HOST
 ```
-
+![alert_container](img/alert_ssh.png =300x200)
 
 ## Алерт использование процессора контейнерами выше 80%А
 Алерты 
 
 
 
-![alert_container](img/alet_container_cpu_usage.png)
+![alert_container](img/alet_container_cpu_usage.png =600x400)
