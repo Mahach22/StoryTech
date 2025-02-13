@@ -17,6 +17,8 @@
 
 
 ## Алерт вход по ssh
+ - реализовано с использованием postfix, pam.d и bash скрипта
+ 
 Устанавливаем mailutils, который включает в себя postfix
 ```
 sudo apt install mailutils
