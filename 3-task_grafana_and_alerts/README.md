@@ -57,8 +57,7 @@ session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_aler
 ![alert_container](img/alert_ssh.png)
 
 ## Алерт использование процессора контейнерами выше 80%А
-Алерты 
-
+Настраиваем алерт в прометеусе [alert.yml](./prometheus_stack/prometheus/alert.yml)
 
 
 ![alert_container](img/alet_container_cpu_usage.png)
