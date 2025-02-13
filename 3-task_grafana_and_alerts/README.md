@@ -8,11 +8,9 @@
   - Настроить почтовый алерт при потребление общим количеством контейнеров мощности более чем на 80 % - алертить.
 
 ## Мониторинг
-Для упрощения развертывания я сделал [баш скрипт](jupyterhub/deploy.sh).
-Процесс развертывания jupyterhub включает в себя 2 этапа:
-1. Идёт сборка образа jupyter notebook с необходимыми нам предустановленными библиотеками из следующего [dockerfile](jupyterhub/dockerfile.notebook).
-2. С использованием [docker compose](jupyterhub/docker-compose.yml) идёт сборка jupyterhub из [dockerfile](jupyterhub/dockerfile) и [конфига jupyterhub](jupyterhub/config/jupyterhub_config.py)
-
+- [Дашбород активности пользователей JupyterHub](https://grafana.story-tech.ru/public-dashboards/68f835b78d6848d5bde2eda44bf77863)
+- [Дашбород топовых тетрадок(по размеру) юпитер ноутбуков](https://grafana.story-tech.ru/public-dashboards/58614ae327a4487aa84d6dc0192b7c2a)
+- [Дашборд топовых таблиц постгрес с их владельцами](https://grafana.story-tech.ru/public-dashboards/034c81d55254466caf571622cbafd515)
 
 
 ## Алерт ssh
