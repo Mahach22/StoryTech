@@ -18,9 +18,33 @@
 
 ## Алерт ssh
 Postgres устанавливаем командой `docker compose up -d` в директории нашего [docker compose](postgres/docker-compose.yml). Также для удобства тестрирования сразу создается таблица [файлом init.sql](postgres/init.sql)
+sudo apt install mailutils postfix
+sudo nano /etc/postfix/main.cf
+
 
 
 ## Алерт containers hight cpu usage
 После развертывания всех контейнеров и запуска jupyter notebook, мы можем проверить подключение к postgres используя [python скрипт](connect_to_postgres.py). Так как psycopg2 у нас предустановлен, отдельно его устанавливать в юпитер ноутбук не нужно.
+
+relayhost = [smtp.mail.ru]:465
+smtp_tls_wrappermode = yes
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+smtp_use_tls = yes
+smtp_tls_security_level = encrypt
+
+
+sasl_passwd
+[smtp.mail.ru]:465 emaillogin:password
+
+sudo chmod 600 /etc/postfix/sasl_passwd
+
+sudo systemctl restart postfix
+
+sudo nano /etc/pam.d/sshd
+session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh $PAM_USER $PAM_HOST
+sudo systemctl restart
 
 ![sql](img/jupyter-notebook.png)
