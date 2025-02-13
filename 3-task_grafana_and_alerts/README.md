@@ -56,9 +56,9 @@ session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_aler
 ```
 
 
-## Алерт использование процессора контейнерами выше 80%
-После развертывания всех контейнеров и запуска jupyter notebook, мы можем проверить подключение к postgres используя [python скрипт](connect_to_postgres.py). Так как psycopg2 у нас предустановлен, отдельно его устанавливать в юпитер ноутбук не нужно.
+## Алерт использование процессора контейнерами выше 80%А
+Алерты 
 
 
 
-![sql](img/jupyter-notebook.png)
+![alert_container](img/alet_container_cpu_usage.png)
