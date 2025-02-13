@@ -62,4 +62,3 @@ session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_aler
 
 
 ![alert_container](img/alet_container_cpu_usage.png)
-<img src="img/alet_container_cpu_usage.png" alt="alert_container" width="300" height="200">
