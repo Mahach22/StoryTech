@@ -1,0 +1,468 @@
+[33mcommit be4a27578da90879e84f01e07de90c6ad7cad78d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Wed Feb 12 22:57:32 2025 +0300
+
+    1233
+
+[33mcommit ee84cbebc00682b421270a8ccca25451392bc601[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Wed Feb 12 22:56:43 2025 +0300
+
+    123
+
+[33mcommit d13d2cc93459c1c1d9a92bb53ae1f9b6dd097fa2[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Wed Feb 12 22:54:15 2025 +0300
+
+    1
+
+[33mcommit 6510c0b14e5ab05fd901d5a27e3dc7843ad1ce79[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Wed Feb 12 22:52:04 2025 +0300
+
+    Delete 3-task_grafana_and_alerts/prometheus_stack/alertmanager/alertmanager.yml
+
+[33mcommit 69ec62841d2fc10c8fd8526485e03c3ac5d65e05[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Wed Feb 12 22:50:42 2025 +0300
+
+    cadvisor
+
+[33mcommit ecc2a8340d7a8a692fc451fd44a369260b5cc155[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Tue Feb 11 20:55:59 2025 +0300
+
+    alert_ssh_login
+
+[33mcommit 83ba6c93b3302ded3a99974f938b9b04045adbce[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sun Feb 9 22:49:31 2025 +0300
+
+    exporters
+
+[33mcommit 3bc046401191837a188136b101186985ad9a573a[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sun Feb 9 19:21:56 2025 +0300
+
+    09022025
+
+[33mcommit fe5e8275414affe783cb80ee1bc74dd4d36e83b6[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 23:12:24 2025 +0300
+
+    network_merge
+
+[33mcommit 06c836cc2be3abaf8ed32a88d1437a4ce676ca06[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 23:05:16 2025 +0300
+
+    grafana
+
+[33mcommit 531289d2c52c36b49f2ae5739a8defb3ffcb5567[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 12:20:02 2025 +0300
+
+    3task
+
+[33mcommit da5079929a76e4517ab2a917150d6dd67d96914c[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 8 12:15:05 2025 +0300
+
+    Delete 2-task_jupyter-and-postgres/postgres/.env
+
+[33mcommit b9e7864778fae466d4f4a9069d645a921e7789df[m
+Merge: 35f5c2a 1fa81b0
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 12:11:50 2025 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 35f5c2a2cc71bc53430950d6d385cc5c5cd9da2c[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 12:11:01 2025 +0300
+
+    gitignore
+
+[33mcommit 1fa81b00c55eee74f91bc17f79a05e397fd20886[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 8 12:04:50 2025 +0300
+
+    Update README.md
+
+[33mcommit 32887bfc67f14be48ccb4188a8cf751ccf4da95b[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 8 12:04:31 2025 +0300
+
+    Update README.md
+
+[33mcommit f0e3d49dff13674d11d6640feb8c200486390075[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 8 12:04:16 2025 +0300
+
+    Update README.md
+
+[33mcommit 192fc1a893b87933821e49aa02f3ebf685a938b4[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 8 12:02:56 2025 +0300
+
+    Update README.md
+
+[33mcommit e1d47809b2ab907bb0aca3b359da63d82b7c490e[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 8 12:01:07 2025 +0300
+
+    create-subfolders
+
+[33mcommit 21978edcb656ee3ee87ff0502ec0270af0e15c99[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 22:00:57 2025 +0300
+
+    Update dockerfile
+
+[33mcommit 2992c6a026bd438481788bca8b637e3bdfabe4ad[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:59:57 2025 +0300
+
+    Update README.md
+
+[33mcommit 87d1072cdee0e41b4a7bf80177cc850f93e3c839[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:50:34 2025 +0300
+
+    Update README.md
+
+[33mcommit 31e2789b5bf1eadec0c30945f720197f5381603a[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:47:00 2025 +0300
+
+    Delete hash_generator.py
+
+[33mcommit 1b7842287adcd76927d0baf5079a454e35a833d5[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:46:44 2025 +0300
+
+    Update README.md
+
+[33mcommit 684ed81833c061ab475cf43de1e50c66a15abfc6[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:46:11 2025 +0300
+
+    Update README.md
+
+[33mcommit 5e925540455f887a5b154e4eee45874877781d4b[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:43:59 2025 +0300
+
+    Update README.md
+
+[33mcommit 79f907454437e11493becc0755658176a49ab16a[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:42:57 2025 +0300
+
+    Update README.md
+
+[33mcommit 2ab83a23d40c04caa4883b41eefaefa9b6157815[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:39:26 2025 +0300
+
+    Update README.md
+
+[33mcommit ea9ecd3db1fc28091957472e054b6c0239337a48[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:36:48 2025 +0300
+
+    Update README.md
+
+[33mcommit de8a9189ea36a13b95719073e2fdf0b6198bf927[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:36:36 2025 +0300
+
+    Update README.md
+
+[33mcommit c3cc48bc0cbdf66216edb018371790d49dfa0bc0[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:36:26 2025 +0300
+
+    Update README.md
+
+[33mcommit 52ae2105d53c86aaab85027814d113e670f5a9ab[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:33:34 2025 +0300
+
+    Update README.md
+
+[33mcommit 0072b04ae2d67b35663a4e79a4e60aceacb7b93d[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:25:47 2025 +0300
+
+    Delete jupyterhub-nvidia directory
+
+[33mcommit f00c48e33a29738d3514cba2c061b6667d98de8b[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:25:30 2025 +0300
+
+    Update README.md
+
+[33mcommit 4f09096d7c7c5e990099d417ef0868a6cc7cf9fa[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:25:03 2025 +0300
+
+    Update README.md
+
+[33mcommit 5508e691656bfec0d2c6061261695f34a19a1c8a[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:24:52 2025 +0300
+
+    Update README.md
+
+[33mcommit cae136b1e2b8dc2e60661c91ac5cf9d710ab7c08[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:20:45 2025 +0300
+
+    Delete img/1
+
+[33mcommit a5d4296c1b11d639038948816523ac4ebb5c0c53[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:19:57 2025 +0300
+
+    Add files via upload
+
+[33mcommit a38c46efa0a4e8825e41e2794fa1f84db8720289[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sun Feb 2 21:19:28 2025 +0300
+
+    img
+
+[33mcommit 2008b04e7d0b0592d272635a1b864bc37c4cb388[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:17:52 2025 +0300
+
+    Delete img/jupyter-notebook.png
+
+[33mcommit 03ca11434a61253ee57dd7cb165774b26668d2c4[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:17:05 2025 +0300
+
+    Delete img/1
+
+[33mcommit 2a445284e560db1db819e7a227e2528f6df85750[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 21:16:52 2025 +0300
+
+    Add files via upload
+
+[33mcommit 5028166928e6c46b81838aa1b3080e3ed7de4235[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sun Feb 2 21:16:20 2025 +0300
+
+    img
+
+[33mcommit 39d89a3a0140119b5858f970cb4ff3e71269e614[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sun Feb 2 20:58:45 2025 +0300
+
+    bred
+
+[33mcommit 6cc9eceb11cc70a7543420d035c7a9516c287f09[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 20:55:03 2025 +0300
+
+    Update deploy.sh
+
+[33mcommit 1b7c6ee2cad2c3a6a58bf7eae5c3b4a1e00b33d8[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 20:52:53 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit cdcd5b60dc38aa2f28b95f859b01298a67d11e3b[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 20:39:10 2025 +0300
+
+    Create deploy.sh
+
+[33mcommit c85123712af36809f63a10d2147c22dac130de99[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 20:29:38 2025 +0300
+
+    Create dockerfile.notebook
+
+[33mcommit f3124923b05e8ffecd51288f32a3eaa90a24a610[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 13:13:53 2025 +0300
+
+    Create connect_to_postgres.py
+
+[33mcommit edc046bab1e2a85c3509b732be9a118fd0533fde[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 12:38:42 2025 +0300
+
+    Update dockerfile
+
+[33mcommit d7c91d27f1480dbbac69f91f96fe4bc02343a637[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 00:56:08 2025 +0300
+
+    Update dockerfile
+
+[33mcommit 4dd83e21fd0881ae7da46698b9fd8b3bab392c7c[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 00:38:58 2025 +0300
+
+    Update dockerfile
+
+[33mcommit ebdd8a9ca8069da3193630a41cf0e002bfa93f33[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 00:15:28 2025 +0300
+
+    Update dockerfile
+
+[33mcommit cfa8812c9d77a44b925f1ac5d86f649e75c62417[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sun Feb 2 00:04:05 2025 +0300
+
+    Update docker-compose.yml
+
+[33mcommit 769e466d1d92189c5b35055d64d9f9e2b586240d[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:58:01 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 1bccefede4dd23dbe5b5ae1714386ff4f5b4fe33[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:41:50 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit bf88794bf14545be27d52d57be86931441fa4fad[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:36:04 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 28a10902923d52a47113604e32de504f133463fa[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:24:23 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 31c75f2d35e503ddfe4029f42c4141176945d0f1[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:16:47 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 7b28c94cfaa33193fcd6bdf77c72cd06dd484a9d[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:10:16 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 133f9b9abbcbd4291233e074d784cb775a69cd6a[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 23:06:16 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 10ae47e47f24285b984079cd3a7a8d51c41f7d32[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 22:56:07 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 5fbe8729a2d7896fe078af252a904313cf324947[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 22:52:17 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 30b9cb6e7f26577700db5361bc79aa27dc079ecc[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 22:45:26 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 04e4cc6bc1d791d877aceab7b2a3f0517c7175fa[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 22:33:23 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit ddb818b9d533fedc17192625cf9c4a2c52a62c66[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 22:19:49 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 68957e0f5dd2cc3b5f108f0a814c8619476a6338[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 16:09:29 2025 +0300
+
+    Create hash_generator.py
+
+[33mcommit 1ebfc70314ca94eb0ccc00037c9a355b75ba20f5[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 16:08:26 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 3f260dae8f2b342ecb8f09fac7451c115f704c6b[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 1 16:01:30 2025 +0300
+
+    create config folder
+
+[33mcommit 4e21f2c83158a80e1a6f25cadec57066d529534a[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 14:04:19 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 4ca411b50482fc0251f9f9c54da59824d74f2893[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 14:03:08 2025 +0300
+
+    Update jupyterhub_config.py
+
+[33mcommit 8e2e5af7f00a2d393226b6586c04487bdfb21a26[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 13:57:46 2025 +0300
+
+    Update docker-compose.yml
+
+[33mcommit 1a7f26e0c25d7379e1acb24469d5bb431ced267f[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Sat Feb 1 13:55:45 2025 +0300
+
+    Update dockerfile
+
+[33mcommit 6b8967fa8f40e954a234f63497e6043702fe3348[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Sat Feb 1 13:49:39 2025 +0300
+
+    jupyter
+
+[33mcommit 519aa3681671ef36e51aea430a00bf0a67cfd2c6[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Thu Jan 30 22:14:07 2025 +0300
+
+    env
+
+[33mcommit 676400a82c3f7d1a94d7ec542a7cfc48f3053e50[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Thu Jan 30 22:13:06 2025 +0300
+
+    env
+
+[33mcommit c7ff3a2d440a232f5635073d1bf148f328ae8d97[m
+Author: mahach <mahach2211@gmail.com>
+Date:   Thu Jan 30 22:11:47 2025 +0300
+
+    postgres_push
+
+[33mcommit 697fd99312d50e66c65218fa77b6bcb117fa60f5[m
+Author: Mahach22 <104731301+Mahach22@users.noreply.github.com>
+Date:   Thu Jan 30 21:48:46 2025 +0300
+
+    Initial commit
