@@ -58,6 +58,7 @@ session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_aler
 
 ## Алерт использование процессора контейнерами выше 80%
 - Реализовано с помощью prometheus, alertmanager и cadvisor (p.s. почту пока настроить не удалось)
+
 Настраиваем алерт в прометеусе [alert.yml](./prometheus_stack/prometheus/alert.yml)
 Настраиваем данные почты для отправки по smtp в [alertmanager](./prometheus_stack/alertmanager/alertmanager.yml.examle)
 
