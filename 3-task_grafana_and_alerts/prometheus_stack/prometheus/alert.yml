@@ -1,24 +1,14 @@
  groups:
   - name: container_cpu_usage
     rules:
-      - alert: ContainerHighCpuUtilization
-        expr: rate(container_cpu_usage_seconds_total{name=~".+"}[1m]) * 100 > 80
+      - alert: HighContainerCPUUsage
+        expr: (sum(rate(container_cpu_usage_seconds_total{container!=""}[1m]) * 100 > 80
         for: 1m
         labels:
-          severity: warning
+          severity: critical
         annotations:
           summary: "High CPU usage on container {{ $labels.container }}"
           description: "Container {{ $labels.container }} is using more than 80% CPU."
-
-  - alert: ContainerHighCpuUtilization
-    expr: (sum(rate(container_cpu_usage_seconds_total{container!=""}[5m])) by (pod, container) / sum(container_spec_cpu_quota{container!=""}/container_spec_cpu_period{container!=""}) by (pod, container) * 100) > 80
-    for: 2m
-    labels:
-      severity: warning
-    annotations:
-      summary: Container High CPU utilization (instance {{ $labels.instance }})
-      description: "Container CPU utilization is above 80%\n  VALUE = {{ $value }}\n  LABELS = {{ $labels }}"
-
 
 
 #
