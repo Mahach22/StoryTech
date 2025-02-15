@@ -86,6 +86,18 @@ services:
     networks:
       - storytech_network
 
+  postgres_exporter:
+    image: prometheuscommunity/postgres-exporter
+    environment:
+      DATA_SOURCE_NAME=${DATA_SOURCE_NAME}
+      #env DATA_SOURCE_NAME=postgresql://username:password@db_postgres:5432/db_name?sslmode=disable
+    ports:
+      - "9187:9187"
+    networks:
+      - storytech_network
+    restart: unless-stopped
+
+
 networks:
     storytech_network:
       name: storytech_network
