@@ -56,6 +56,7 @@ sudo nano /etc/pam.d/sshd
 ```
 session    required   pam_exec.so /"путь к каталогу со скриптом"/ssh_alert.sh
 ```
+Результат при авторизации по ssh на почте
 ![alert_container](img/ssh_alert.png)
 
 ## Алерт использование процессора контейнерами выше 80%
