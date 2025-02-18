@@ -1,11 +1,23 @@
-#!/bin/bash
+#!/bin/sh
 
-USER=$1
-IP=$2
-DATE=$(date +"%Y-%m-%d %H:%M:%S")
-HOSTNAME=$(hostname)
+# Your Email Information: Recipient (To:), Subject and Body
+RECIPIENT="mahach2211@gmail.com"
+SUBJECT="Email from your Server: SSH Alert"
 
-SUBJECT="SSH Alert: User $USER logged in from $IP on $HOSTNAME"
-BODY="User: $USER\nIP Address: $IP\nDate: $DATE\nHostname: $HOSTNAME"
+BODY="
+Вход по SSH прошел успешно, некоторая информация по безопасности:
+  User:        $PAM_USER
+	User IP Host: $PAM_RHOST
+	Service:     $PAM_SERVICE
+	TTY:         $PAM_TTY
+	Date:        `date`
+	Server:      `uname -a`
+"
 
-echo -e "$BODY" | mail -s "$SUBJECT" -r gad000@bk.ru mahach2211@gmail.com
+if [ ${PAM_TYPE} = "open_session" ]; then
+	echo "Subject:${SUBJECT} ${BODY}" | /usr/sbin/sendmail ${RECIPIENT}
+fi
+
+exit 0
+
+echo -e "${BODY}" | mail -s "$SUBJECT" -r gad000@bk.ru mahach2211@gmail.com
