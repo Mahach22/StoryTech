@@ -56,7 +56,7 @@ sudo nano /etc/pam.d/sshd
 ```
 session    required   pam_exec.so /"путь к каталогу со скриптом"/ssh_alert.sh
 ```
-![alert_container](img/alert_ssh.png)
+![alert_container](img/ssh_alert.png)
 
 ## Алерт использование процессора контейнерами выше 80%
 - Реализовано с помощью prometheus, alertmanager и cadvisor (p.s. почту пока настроить не удалось)
