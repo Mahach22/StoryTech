@@ -54,7 +54,7 @@ sudo systemctl restart postfix
 sudo nano /etc/pam.d/sshd 
 ```
 ```
-session    required   pam_exec.so /"путь к каталогу"/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh
+session    required   pam_exec.so /"путь к каталогу со скриптом"/ssh_alert.sh
 ```
 ![alert_container](img/alert_ssh.png)
 
