@@ -54,7 +54,7 @@ sudo systemctl restart postfix
 sudo nano /etc/pam.d/sshd 
 ```
 ```
-session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh $PAM_USER $PAM_HOST
+session    required   pam_exec.so /wolf/docker/StoryTech/3-task_grafana_and_alerts/ssh_alert.sh
 ```
 ![alert_container](img/alert_ssh.png)
 
