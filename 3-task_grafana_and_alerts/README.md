@@ -57,6 +57,7 @@ sudo nano /etc/pam.d/sshd
 session    required   pam_exec.so /"путь к каталогу со скриптом"/ssh_alert.sh
 ```
 Результат при авторизации по ssh на почте
+
 ![alert_container](img/ssh_alert.png)
 
 ## Алерт использование процессора контейнерами выше 80%
@@ -66,7 +67,9 @@ session    required   pam_exec.so /"путь к каталогу со скрип
 Настраиваем данные почты для отправки по smtp в [alertmanager](./prometheus_stack/alertmanager/alertmanager.yml.examle)
 
 результат в прометеусе
+
 ![alert_container](img/alet_container_cpu_usage.png)
 
 алерт на почте
+
 ![alert_container_mail](img/alet_container_cpu_usage_mail.png)
