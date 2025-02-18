@@ -50,9 +50,11 @@ sudo chmod 600 /etc/postfix/sasl_passwd
 sudo systemctl restart postfix
 ```
 Настраиваем запуск [нашего скрипта](./ssh_alert.sh) при входе по ssh
+открываем конфиг
 ```
 sudo nano /etc/pam.d/sshd 
 ```
+добавляем в него строку
 ```
 session    required   pam_exec.so /"путь к каталогу со скриптом"/ssh_alert.sh
 ```
