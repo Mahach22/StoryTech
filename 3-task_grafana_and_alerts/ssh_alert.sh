@@ -6,7 +6,7 @@ SUBJECT="Email from your Server: SSH Alert"
 
 BODY="
 Вход по SSH прошел успешно, некоторая информация по безопасности:
-  User:        $PAM_USER
+        User:        $PAM_USER
 	User IP Host: $PAM_RHOST
 	Service:     $PAM_SERVICE
 	TTY:         $PAM_TTY
