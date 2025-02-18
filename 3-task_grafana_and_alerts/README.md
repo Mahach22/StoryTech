@@ -64,5 +64,8 @@ session    required   pam_exec.so /"путь к каталогу со скрип
 Настраиваем алерт в прометеусе [alert.yml](./prometheus_stack/prometheus/alert.yml)
 Настраиваем данные почты для отправки по smtp в [alertmanager](./prometheus_stack/alertmanager/alertmanager.yml.examle)
 
-
+результат в прометеусе
 ![alert_container](img/alet_container_cpu_usage.png)
+
+алерт на почте
+![alert_container_mail](img/alet_container_cpu_usage_mail.png)
